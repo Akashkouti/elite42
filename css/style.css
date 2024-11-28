@@ -6,27 +6,53 @@
 ul.parent {
   list-style: none;
   display: flex;
-  justify-content: center;
-  background-color: grey;
+  justify-content: flex-end;
+  background-color: #808080;
 }
 ul.parent li {
   position: relative;
 }
-ul.parent li a {
+ul.parent a {
   padding: 10px;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
-  color: #fff;
+  color: wheat;
 }
-ul.parent li a:hover {
+ul.parent a:hover {
   color: red;
 }
-ul.parent li ul {
+ul.parent ul {
   position: absolute;
-  top: 24px;
   display: none;
 }
-ul.parent li:hover ul {
+ul.parent:hover ul {
   display: block;
+}
+
+.content .products {
+  flex-wrap: wrap;
+  display: flex;
+}
+.content .products li {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #cb5353;
+}
+.content .products li button {
+  border: none;
+  color: red;
+  position: absolute;
+  background-color: yellow;
+  width: 100%;
+  bottom: 0;
+}
+.content .products li button:hover {
+  color: aqua;
+  cursor: pointer;
+}
+.content .products li img {
+  width: 100%;
+  height: 92%;
 }/*# sourceMappingURL=style.css.map */
