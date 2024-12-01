@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul.parent{
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     padding: 10px;
+     
+     background-color: aqua;
+     li{
+        position: relative;
+        a{ 
+            padding: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover{
+                color: red;
+            }
+        }
+        ul{
+            
+            position: absolute;
+            display: none;
+        }
+        &:hover{
+            ul{
+                display: block;
+            }
+        }
+     }
+    }
+    .content{
+        .product{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex-wrap: wrap;
+            li{
+                position: relative;
+                button{
+                    position: absolute;
+                    &:hover{
+                        cursor: pointer;
+                        color: aqua;
+                    }
+                    }
+                    img{
+                        position: absolute;
+                        height: 50%;
+                        width: 50%;
+                    }
+                
+
+                    }
+                    }
+                }

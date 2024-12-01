@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul.parent {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: aqua;
+}
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  padding: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+ul.parent li a:hover {
+  color: red;
+}
+ul.parent li ul {
+  position: absolute;
+  display: none;
+}
+ul.parent li:hover ul {
+  display: block;
+}
+
+.content .product {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.content .product li {
+  position: relative;
+}
+.content .product li button {
+  position: absolute;
+}
+.content .product li button:hover {
+  cursor: pointer;
+  color: aqua;
+}
+.content .product li img {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+}/*# sourceMappingURL=style.css.map */
