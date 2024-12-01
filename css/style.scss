@@ -31,13 +31,12 @@ ul.parent{
       }}
       
   .content{
-    
-
-    
     .products{
         flex-wrap: wrap;
         display: flex;
-
+        
+        justify-content: space-between;
+        list-style: none;
                 
         
         li{
@@ -48,7 +47,7 @@ ul.parent{
             position: relative;
             background-color:#cb5353;
          button{
-            
+               
                 border: none;
                 color: red;
                 position: absolute;
@@ -58,13 +57,16 @@ ul.parent{
                 &:hover{
                     color: aqua;
                     cursor: pointer;
+                    background-color: black;
                 }
 
              }
              img{
                 width: 100%;
                 height: 92%;
-                
+                &:hover{
+                    color:red;
+                }
              }
             
         }

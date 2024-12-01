@@ -33,6 +33,8 @@ ul.parent:hover ul {
 .content .products {
   flex-wrap: wrap;
   display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 .content .products li {
   width: 200px;
@@ -51,8 +53,12 @@ ul.parent:hover ul {
 .content .products li button:hover {
   color: aqua;
   cursor: pointer;
+  background-color: black;
 }
 .content .products li img {
   width: 100%;
   height: 92%;
+}
+.content .products li img:hover {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
