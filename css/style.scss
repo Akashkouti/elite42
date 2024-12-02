@@ -23,6 +23,8 @@ ul.parent{
     ul{
         position: absolute;
         display: none;
+        background-color: rebeccapurple;
+        padding: 5x;
     }
     &:hover {
         ul  {
@@ -41,7 +43,7 @@ ul.parent{
         
         li{
             
-            
+            list-style: none;
             width: 200px;
             height: 200px;
             position: relative;
