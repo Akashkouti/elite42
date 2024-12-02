@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.parent {
+  display: flex;
+  justify-content: flex-end;
+  background-color: gray;
+  padding: 50px;
+}
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(217, 216, 216);
+  font-size: 35px;
+}
+ul.parent li a:hover {
+  color: blue;
+}
+ul.parent li ul {
+  position: absolute;
+  display: none;
+  width: 120px;
+  top: 45px;
+}
+ul.parent li:hover ul {
+  display: block;
+}
+
+.header {
+  background-image: url("../images/shoppy.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1550px;
+  height: 700px;
+}
+
+.content .product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px;
+}
+.content .product li {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.content .product li button {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: green;
+}
+.content .product li button:hover {
+  color: red;
+  background-color: black;
+  cursor: pointer;
+}
+.content .product li img {
+  position: absolute;
+  width: 200px;
+  height: 160px;
+  bottom: 20px;
+}
+.content .product li img:hover {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
