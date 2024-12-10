@@ -1,0 +1,233 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      
+      header.newsletter {
+        background-color: #f8f8f8;
+        padding: 15px 20px;
+        text-align: center;
+      
+        input {
+          padding: 8px;
+          margin-left: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      
+        button {
+          background-color: #d0a85c;
+          color: white;
+          padding: 8px 12px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      
+          &:hover {
+            background-color: #b08a4c;
+          }
+        }
+      }
+      
+      main {
+        padding: 20px;
+      }
+      
+      .collection {
+        text-align: start;
+      
+        h2 {
+          color: #b08a4c;
+        }
+      
+        .filters {
+          display: flex;
+          justify-content: flex-end;
+          margin: 20px 0;
+      
+          button {
+            margin: 0 10px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            background: none;
+            border-radius: 4px;
+            cursor: pointer;
+      
+            &:hover {
+              background-color: #f8f8f8;
+            }
+          }
+        }
+      
+        .products {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          padding: 20px;
+      
+          .product {
+            text-align: center;
+      
+            img {
+              max-width: 100%;
+              border-radius: 4px;
+            }
+      
+            h3 {
+              margin: 10px 0;
+            }
+      
+            p {
+              color: #b08a4c;
+              font-weight: bold;
+            }
+          }
+        }
+      
+        .load-more {
+          background-color: #d0a85c;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      
+          &:hover {
+            background-color: #b08a4c;
+          }
+        }
+      }
+      
+      .story {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #f8f8f8;
+      
+        .story-image img {
+          max-width: 100%;
+          border-radius: 4px;
+        }
+      
+        .story-text {
+          margin-left: 50px;
+      
+          h2 {
+            color: #b08a4c;
+          }
+      
+          .brand {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d0a85c;
+          }
+      
+          button {
+            background-color: #d0a85c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+      
+            &:hover {
+              background-color: #b08a4c;
+           }
+         }
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .newsletter input {
+          width: 80%;
+          margin: 10px 0;
+        }
+      
+        .collection .products {
+          grid-template-columns: repeat(2, 1fr); 
+          gap: 15px;
+        }
+      
+        .story {
+          flex-direction: column;
+      
+          .story-text {
+            margin-left: 0;
+            text-align: center;
+      
+            button {
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+      
+      @media (max-width: 480px) {
+        header.newsletter {
+          padding: 10px;
+      
+          input {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+      
+          button {
+            width: 100%;
+          }
+        }
+      
+        .collection .filters {
+          flex-direction: column;
+      
+          button {
+            margin: 5px 0;
+            padding: 10px;
+            width: 100%;
+          }
+        }
+      
+        .collection .products {
+          grid-template-columns: 1fr; 
+        }
+      
+        .story {
+          padding: 10px;
+      
+          .story-text {
+            button {
+              width: 100%;
+              padding: 15px;
+            }
+          }
+        }
+      }
+      
+      @media (min-width: 1024px) {
+        .collection .products {
+          grid-template-columns: repeat(4, 1fr); 
+        }
+      
+        .story {
+          flex-direction: row;
+      
+          .story-image img {
+            max-width: 100%;
+            
+          }
+      
+          .story-text {
+            margin-left: 30px;
+          }
+        }
+      }
